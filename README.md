@@ -12,7 +12,7 @@ An easy to use repo to generate synthetic data on Compute Canada using the origi
 
 ### Easy steps to use
 
-1. On the login node : run the `./lvsn_scripts/1_download_image.sh` to download the necessary apptainer image
+1. On the login node : run the `./lvsn_scripts/1_setup_repo.sh` to download the necessary apptainer image
 
 2. 
 
@@ -27,7 +27,9 @@ However, Compute Canada explicitly forbid the usage of Conda on its clusters and
 
 ### Solution
 
-The solution was *containerization*! Compute Canada doesn't support Docker for security reasons, but has a built-in container system : **Apptainer**  The original repo had a valid Dockerfile that could be built and then transformed into an Apptainer image. 
+The solution was *containerization*! Compute Canada doesn't support Docker for security reasons, but has a built-in container system : **Apptainer**  The original repo had a valid Dockerfile that could be built and then transformed into an Apptainer image.
+
+> The Dockerfile was modified a little bit to fix some binaries problem, but otherwise, it is untouched.
 
 This is the Apptainer image that is downloaded in the **step 1** of the lvsn_scripts
 
