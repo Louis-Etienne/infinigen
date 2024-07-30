@@ -19,4 +19,4 @@ module load apptainer
 ### Download the image containing the environement necessary to run infinigen
 echo 'Downloading the image containing the environment necessary to run infinigen'
 cd $REPO_DIR
-apptainer pull --arch amd64 library://lemes3/infinigen-lvsn/infinigen_apptainer.sif:latest
+apptainer pull --arch amd64 library://lemes3/compute_canada_infinigen/infinigen:latest
