@@ -4,6 +4,8 @@ blender
 blender.tar.xz
 Blender.app
 
+infinigen_apptainer.sif_latest.sif
+
 *.c
 
 .coverage

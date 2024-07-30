@@ -1,6 +1,10 @@
-# Modification of the [INFINIGEN](https://infinigen.org) repo for deployment and use on compute canada
+# Modification of the [INFINIGEN](https://infinigen.org) repo for deployment and use on Compute Canada
+
+An easy to use repo to generate synthetic data on Compute Canada using the original [INFINIGEN](https://infinigen.org) of [Princeton Vision & Learning Lab](https://pvl.cs.princeton.edu/)
 
 ## Getting started
+
+
 
 ### Quick overview
 
@@ -8,7 +12,9 @@
 
 ### Easy steps to use
 
-1. On the login node : run the ./lvsn_scripts/1_download_image.sh to download the necessary apptainer image
+1. On the login node : run the `./lvsn_scripts/1_download_image.sh` to download the necessary apptainer image
+
+2. 
 
 ## Infinigen, Compute Canada and dependencies
 
@@ -25,7 +31,7 @@ The solution was *containerization*! Compute Canada doesn't support Docker for s
 
 This is the Apptainer image that is downloaded in the **step 1** of the lvsn_scripts
 
-
+---
 
 <div align="center">
 <img src="docs/images/infinigen.png" width="300"></img>
