@@ -1,3 +1,31 @@
+# Modification of the [INFINIGEN](https://infinigen.org) repo for deployment and use on compute canada
+
+## Getting started
+
+### Quick overview
+
+
+
+### Easy steps to use
+
+1. On the login node : run the ./lvsn_scripts/1_download_image.sh to download the necessary apptainer image
+
+## Infinigen, Compute Canada and dependencies
+
+The original Infinigen repo uses Conda for building the environement with all the necessary dependencies and modules. 
+
+### Problem
+
+However, Compute Canada explicitly forbid the usage of Conda on its clusters and cannot run Infinigen because of conflicting module versions. 
+> A good example I encountered was that most Infinigen modules ran fine with StdEnv2020, while another module needed StdEnv2023 : they are mutually exclusive!
+
+### Solution
+
+The solution was *containerization*! Compute Canada doesn't support Docker for security reasons, but has a built-in container system : **Apptainer**  The original repo had a valid Dockerfile that could be built and then transformed into an Apptainer image. 
+
+This is the Apptainer image that is downloaded in the **step 1** of the lvsn_scripts
+
+
 
 <div align="center">
 <img src="docs/images/infinigen.png" width="300"></img>
