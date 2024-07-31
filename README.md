@@ -8,7 +8,7 @@ An easy to use repo to generate synthetic data on Compute Canada using the origi
 
 1. On the login node : run the `./lvsn_scripts/1_setup_repo.sh` to download the necessary apptainer image
 
-2. In an interactive job, or in a batch job, run the `./lvsn_scripts/2_run_infinigen`. You can modify the env variables in the script and the command to run by modifying the .gin config files *(go look at the infinigen documentatin for more info on .gin config files)*
+2. In an interactive job, or in a batch job, run the `./lvsn_scripts/2_run_infinigen`. You can modify the env variables in the script and the command to run by modifying the .gin config files *(go look at the infinigen documentation for more info on .gin config files)*
 
 ## Infinigen, Compute Canada and dependencies
 

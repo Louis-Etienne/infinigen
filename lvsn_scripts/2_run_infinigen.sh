@@ -25,7 +25,7 @@ cd /opt/infinigen
 # Replacing blender_gt.gin, with opengl_gt.gin will extract more ground truth with opengl
 # Replacing local_256GB.gin with slurm.gin will optimize for SLURM clusters and gpu usage
 # Adding cuda_terrain.gin to --pipeline_configs will enable the use of the GPU for terrain generation
-python -m infinigen.datagen.manage_jobs --output_folder /output_dir/outputs/my_datasets --num_scenes 1000 --pipeline_configs slurm.gin cuda_terrain.gin monocular.gin opengl_gt.gin indoor_background_configs.gin --configs singleroom.gin --pipeline_overrides get_cmd.driver_script='infinigen_examples.generate_indoors' manage_datagen_jobs.num_concurrent=16 --overrides compose_indoors.restrict_single_supported_roomtype=True
+python -m infinigen.datagen.manage_jobs --output_folder /output_dir/outputs/my_datasets --num_scenes 1 --pipeline_configs local_64GB.gin cuda_terrain.gin monocular.gin opengl_gt.gin indoor_background_configs.gin --configs singleroom.gin --pipeline_overrides get_cmd.driver_script='infinigen_examples.generate_indoors' manage_datagen_jobs.num_concurrent=2 LocalScheduleHandler.use_gpu=True --overrides compose_indoors.restrict_single_supported_roomtype=True 
 
 
 
